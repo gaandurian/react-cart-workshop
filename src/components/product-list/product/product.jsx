@@ -11,7 +11,7 @@ class Product extends Component {
   <div className="card-body">
     <h5 className="card-title">{this.props.product.label}</h5>
     <p className="card-text">{this.props.product.description}</p>
-    <a href="#" className="btn btn-danger" onClick={() => this.props.handleAddToCart(this.props.product)}>+cart</a>
+    <a href="#" className="btn btn-danger" onClick={() => this.props.handleAddToCart(this.props.product)}>Add to cart</a>
   </div>
 </div>
       

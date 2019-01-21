@@ -6,11 +6,13 @@ import Modal from 'react-responsive-modal'
 import "./App.css";
 
 class App extends Component {
+  
   state = {
-    cartOpen: false,
     cart: []
   }
+
   render() {
+
     return (
       <div>
         <Navbar handleOpenCart={this.onCartOpen} items={this.state.cart.length}/>
@@ -45,7 +47,6 @@ class App extends Component {
   onCartClose = () => {
     this.setState({ cartOpen: false })
   }
-
 
 }
 
